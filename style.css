@@ -79,6 +79,12 @@ header {
   color: #fff;
 }
 
+/* PAGE VIEW */
+
+.page-container {
+  padding: 3vh 5vw;
+}
+
 /* FOOTER */
 
 footer {
