@@ -7,6 +7,9 @@ Author URI: https://gomezjuanefe.github.io/
 Licence: GNU General Public Licence V3 or Later
 Licence URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
+
+/* GENERAL STYLES */
+
 html * {
   margin: 0;
   padding: 0;
@@ -22,6 +25,15 @@ span,
 ul {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
 }
 
 .attachment-large {
@@ -70,40 +82,56 @@ header {
 }
 
 .header-container nav li a {
-  text-decoration: none;
-  color: #000;
   text-transform: uppercase
-}
-
-.header-container nav li a:hover {
-  color: #fff;
 }
 
 /* PAGE VIEW */
 
 .page-container {
   padding: 3vh 5vw;
+  margin-bottom: 30px;
+}
+.page-container .post-card {
+  display: flex;
+}
+
+.post-card .content,
+.post-card .post-thumbnail {
+  width: 50%;
+}
+
+.post-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-container h2 {
+  font-weight: 600;
+  margin: 30px 0 10px;
+}
+
+.page-container p {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.page-container blockquote {
+  padding-left: 20px;
+  margin: 15px 0;
+  font-style: italic;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: #EEE2D6;
-  padding: 10px 0
-}
-
-.footer-container {
-  color: #000;
+  padding: 30px 0;
   text-align: center;
-}
+  background-color: #EEE2D6;
+} 
 
-footer {
-  color: white
-}
-
-footer p {
-  margin: 0;
-  color: #fff
+footer a {
+  text-decoration: underline;
 }
 
 .lista-productos h2 {

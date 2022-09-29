@@ -40,6 +40,8 @@ function sidebar() {
       'after_title' => '</p>',
       'before_widget' => '<div id="%1$s" class="%2$s"',
       'after_widget' => '</div>',
+      'before_sidebar' => '',
+      'after_sidebar'  => '',
     )
   );
 }
