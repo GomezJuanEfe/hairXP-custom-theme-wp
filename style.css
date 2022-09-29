@@ -21,6 +21,7 @@ p,
 span,
 ul {
   font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
 }
 
 .attachment-large {
@@ -37,23 +38,45 @@ ul {
   margin-bottom: 0px;
 }
 
+/* Header */
+
 header {
+  padding: 1.5vh 5vw;
   background-color: #EEE2D6
 }
+.header-container {
+  display: flex;
+}
 
-header nav li {
+.logo-container {
+  width: 50%;
+}
+
+.menu-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.menu-container nav {
+  width: 100%;
+}
+.header-container nav ul {
+  text-align: right;
+}
+.header-container nav ul li {
   list-style: none;
   display: inline-block;
   padding: 0 15px
 }
 
-header nav li a {
-  color: #fff;
+.header-container nav li a {
+  text-decoration: none;
+  color: #000;
   text-transform: uppercase
 }
 
-header nav li:hover {
-  color: #fff
+.header-container nav li a:hover {
+  color: #fff;
 }
 
 footer {

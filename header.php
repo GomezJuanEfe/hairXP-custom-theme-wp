@@ -13,7 +13,7 @@
     <div class="logo-container">
       <img src="<?php echo get_template_directory_uri() ?>/assets/img/Logo_hairXP.svg" alt="logo">
     </div>
-    <div>
+    <div class="menu-container">
       <nav>
         <?php wp_nav_menu(
           array(
