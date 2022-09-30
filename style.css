@@ -85,6 +85,61 @@ header {
   text-transform: uppercase
 }
 
+/***** FRONT-PAGE *****/
+
+.hero-container {
+  height: 35vw;
+  padding-right: 5vw;
+  background-color: #EEE2D6;
+  position: relative;
+}
+.hero-container figure {
+  margin: 0;
+}
+
+.hero-container .main-img {
+  width: 45vw;
+  position: absolute;
+  transform: rotateY(180deg);
+  top: 0;
+  right: 5vw;
+  z-index: 10;
+}
+
+.hero-container .text-card {
+  width: 22vw;
+  height: 22vw;
+  padding: 4vw;
+  position: absolute;
+  z-index: 20;
+  top: 20%;
+  right: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.hero-container .text-card h2 {
+  font-size: 3vw;
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+
+.hero-container .text-card p {
+  font-size: 1.5vw;
+}
+
+.hero-container .second-img {
+  width: 20vw;
+  position: absolute;
+  z-index: 5;
+  left: 20%;
+  bottom: 0%;
+}
+
+/***** End FRONT-PAGE *****/
+
 /* PAGE VIEW */
 
 .page-container {
