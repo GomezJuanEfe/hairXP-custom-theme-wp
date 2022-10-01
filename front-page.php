@@ -11,7 +11,7 @@
   }
 }?>
 
-  <div class="product-list">
+  <div class="products">
     <h2>Products</h2>
     <div class="product-container">
     <?php 
@@ -27,14 +27,14 @@
         while($products->have_posts()) {
           $products->the_post(); ?>
             <div class="product-card">
+              <h4>
+                <?php the_title(); ?>
+              </h4>
               <figure>
                 <?php the_post_thumbnail('large'); ?>
               </figure>
-              <h4>
-                <a href="<?php the_permalink(); ?>">
-                  <?php the_title(); ?>
-                </a>
-              </h4>
+              <?php the_content(); ?>
+              <a href="<?php the_permalink(); ?>">Start visit</a>
             </div>
           <?php
         }
