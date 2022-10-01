@@ -47,4 +47,30 @@ function sidebar() {
 }
 
 add_action('widgets_init', 'sidebar');
+
+function products_types() {
+  $labels = array(
+    'name' => 'Products',
+    'singular_name' => 'Products',
+    'menu_name' => 'Products',
+  );
+  $args = array(
+    'label' => 'product',
+    'description' => 'Hair loss products',
+    'labels' => $labels,
+    'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+    'public' => true,
+    'show_in_menu' => true,
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-cart',
+    'can_export' => true,
+    'publicy_queryable' => true,
+    'rewrite' => true,
+    'show_in_rest' => true,
+  );
+  register_post_type('product', $args);
+}
+
+add_action('init', 'products_types');
+
 ?>

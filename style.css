@@ -50,7 +50,7 @@ ul {
   margin-bottom: 0px;
 }
 
-/* Header */
+/***** HEADER *****/
 
 header {
   padding: 1.5vh 5vw;
@@ -84,6 +84,8 @@ header {
 .header-container nav li a {
   text-transform: uppercase
 }
+
+/***** End HEADER *****/
 
 /***** FRONT-PAGE *****/
 
@@ -140,7 +142,7 @@ header {
 
 /***** End FRONT-PAGE *****/
 
-/* PAGE VIEW */
+/***** VIEW PAGE *****/
 
 .page-container {
   padding: 3vh 5vw;
@@ -177,7 +179,9 @@ header {
   font-style: italic;
 }
 
-/* FOOTER */
+/***** End VIEW PAGE *****/
+
+/***** FOOTER *****/
 
 footer {
   padding: 30px 0;
@@ -188,6 +192,8 @@ footer {
 footer a {
   text-decoration: underline;
 }
+
+/***** End FOOTER *****/
 
 .lista-productos h2 {
   font-weight: 900
