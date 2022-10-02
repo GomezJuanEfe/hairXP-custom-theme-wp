@@ -9,6 +9,9 @@ Licence URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 /* GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
 
 html * {
   margin: 0;
@@ -138,6 +141,16 @@ header {
   z-index: 5;
   left: 20%;
   bottom: 0%;
+}
+
+.hero-container .back-square {
+  width: 24vw;
+  height: 16vw;
+  position: absolute;
+  z-index: 3;
+  left: 5vw;
+  top: 10%;
+  background-color: #F9D299;
 }
 
 /***** End FRONT-PAGE *****/
